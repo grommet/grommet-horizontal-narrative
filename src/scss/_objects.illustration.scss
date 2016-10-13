@@ -1,0 +1,114 @@
+// Explicitly define grommet class here to override
+// Grommet's base image margins.
+.grommet .illustration {
+  // Setting min-width fixes Firefox svg scale bug.
+  width: 900vw;
+  min-width: 900vw;
+  height: auto;
+  max-height: 100vh;
+  margin: 0;
+  align-self: flex-end;
+  padding-bottom: 10px;
+  pointer-events: none;
+
+  @include media-query(lap-and-up) {
+    padding-bottom: 20px;
+    width: 400vw;
+    min-width: 400vw;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  * {
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  }
+
+  .illustration--stacked {
+    position: absolute;
+    left: 0;
+  }
+
+  .illustration__background {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 1s ease-out;
+
+    &.illustration__background--active {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  .illustration__hero {
+    position: fixed;
+    width: 42vw;
+    left: 50vw;
+    padding-bottom: 16px;
+
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 2;
+
+    @include media-query(lap-and-up) {
+      width: 18.5vw;
+    }
+
+    &.illustration__hero--active {
+      opacity: 1;
+    }
+  }
+
+  .illustration__hero-2 {
+    position: absolute;
+    left: 404vw;
+    width: 36vw;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding-bottom: 8px;
+
+    @include media-query(lap-and-up) {
+      width: 16vw;
+      left: 180vw;
+    }
+
+    &.illustration__hero-2--active {
+      position: fixed;
+      left: 50%;
+    }
+  }
+
+  .illustration__item {
+    opacity: 0;
+
+    &.illustration__item--left {
+      transform: translateX(-10vw);
+      -ms-transform: translateX(-50px);
+    }
+
+    &.illustration__item--right {
+      transform: translateX(10vw);
+      -ms-transform: translateX(50px);
+    }
+
+    &.illustration__item--active {
+      opacity: 1;
+      transform: translateX(0vw);
+      -ms-transform: translateX(0);
+    }
+  }
+
+  .illustration__woman {
+    opacity: 0;
+    transform: translateX(-10vw);
+    -ms-transform: translateX(-50px);
+
+    &.illustration__woman--active {
+      opacity: 1;
+      transform: translateX(0vw);
+      -ms-transform: translateX(0);
+    }
+  }
+}
