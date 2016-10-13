@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 4195 340.3" style="enable-background:new 0 0 4195 340.3;" xml:space="preserve">
+<style type="text/css">
+		@keyframes flash {
+		0% {
+	    opacity: 0;
+	    transform: scale(.5);
+		}
+
+		5% {
+			opacity: 1;
+		}
+
+	  20% {
+			opacity: 0;
+	    transform: scale(1.25)
+	  }
+
+	  100% {
+			opacity: 0;
+	    transform: scale(1.25)
+	  }
+	}
+	.st0{
+		fill:none;
+		stroke: #000000;
+		stroke-width: 4;
+		stroke-miterlimit: 10;
+		transform-origin: center;
+		animation: flash 2.5s ease-out infinite;
+	}
+</style>
+<path class="st0" d="M2939.1,63c-0.6-4.2-3.2-7.6-6.7-9.4c5-5.5,7-13.3,5.1-20.5c9.4,3.3,20.1,0.7,26.9-6.6c2.3,6.8,8,12,15.1,13.5
+	c-4.5,6.2-5.3,14.6-1.7,21.6"/>
+</svg>
