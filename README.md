@@ -1,4 +1,4 @@
-# Grommet Contextual Immersion Infographic Template
+# Grommet Horizontal Narrative Infographic Example
 
 This is the source code for a Grommet based universal single page. To run the website execute the following:
 
